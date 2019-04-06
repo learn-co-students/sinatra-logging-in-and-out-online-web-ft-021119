@@ -46,38 +46,38 @@ methods that make it cleaner to add logic to our views.
 
 ## Instructions
 
-* You'll want to create a User class and a table to store users. Users should
+<!-- * You'll want to create a User class and a table to store users. Users should
   have a username, password, and balance (a decimal storing their bank account
   balance). In the `db` folder is a `seeds.rb` file containing some
   basic users to practice logging in with. Run `rake db:migrate` and
-  `rake db:seed` once your User migration and model are in place.
+  `rake db:seed` once your User migration and model are in place. -->
 
-* You'll need to create a login form on the index page that accepts a username
-  and password and sends a `POST` request with an action of `/login`.
+<!-- * You'll need to create a login form on the index page that accepts a username
+  and password and sends a `POST` request with an action of `/login`. -->
 
-* In the controller action that processes the `POST` request, you'll want to
-  find the user in the database based on their username.
+<!-- * In the controller action that processes the `POST` request, you'll want to
+  find the user in the database based on their username. -->
 
-* If there is a match, set the session to the user's ID, redirect them to the
+<!-- * If there is a match, set the session to the user's ID, redirect them to the
   `/account` route (using `redirect to`), and use ERB to display the user's
   data on the page.
 
-* If there is no match, render the error page.
-
+* If there is no match, render the error page. -->
+<!-- 
 * On the `/account` page, set up a link called 'Log Out' that clears the
-  session.
+  session. -->
 
-* In `app/helpers/helpers.rb`, you'll notice a predefined `Helpers` class. In
+<!-- * In `app/helpers/helpers.rb`, you'll notice a predefined `Helpers` class. In
   this class, you'll want to define two **class** methods, `current_user` and
-  `is_logged_in?`.
+  `is_logged_in?`. -->
 
-* `current_user` should accept the session hash as an argument. This method
+<!-- * `current_user` should accept the session hash as an argument. This method
   should use the `user_id` from the session hash to find the user in the
   database and return that user.
 
 * `is_logged_in?` should also accept the session hash as an argument. This
   method should return true if the `user_id` is in the session hash and false
-  if not. The Ruby `!!` operator will come in handy here.
+  if not. The Ruby `!!` operator will come in handy here. -->
 
 * In `account.erb`, you'll want to use the `is_logged_in?` helper method to
   only display the username and account balance if the user is logged in.
