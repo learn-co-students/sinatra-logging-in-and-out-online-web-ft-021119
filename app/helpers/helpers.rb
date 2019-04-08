@@ -7,6 +7,7 @@ class Helpers
 		
 		user = User.find(session[:user_id])
 		
+		
 	end
 
 
