@@ -1,8 +1,8 @@
 class Helpers
   def self.current_user(session)
     @current_user = User.find_by_id(session[:user_id])
-    binding.pry
   end
+  
   def self.is_logged_in?(session)
     session[:user_id] != nil ? true : false
   end
